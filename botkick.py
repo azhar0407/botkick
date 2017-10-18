@@ -126,11 +126,11 @@ def SEND_MESSAGE(op):
             if msg.contentType == 0:
                 #if "gname:" in msg.text:
 #--------------------------------------------------------------
-                if msg.text == "Mulai":
+                if msg.text == "//bye":
                     print "ok"
-                    _name = msg.text.replace("Mulai","")
+                    _name = msg.text.replace("//bye","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Kick By Farzain - zFz\nsaya tidak bertanggung jawab apabila grup anda rata karena bot ini, silahkan kalian tanya sendiri akun ini\nTerimakasih")
+                    sendMessage(msg.to,"Wkwkwk")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -147,17 +147,17 @@ def SEND_MESSAGE(op):
                             except:
                                 sendText(msg.to,"error")
 #-------------------------------------------------------------			
-		if msg.text == "Salken all":
+		if msg.text == "//ping":
                     start = time.time()
-                    sendMessage(msg.to, "hehehe")
+                    sendMessage(msg.to, "Sukses")
                     elapsed_time = time.time() - start
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
 #-------------------------------------------------------------
-                if msg.text == "Spam":
+                if msg.text == "//spam":
                     sendMessage(msg.to,"3")
                     sendMessage(msg.to,"2")
                     sendMessage(msg.to,"1")
-                    sendMessage(msg.to,"Fuck Off")
+                    sendMessage(msg.to,"wota anyink")
                     sendMessage(msg.to,"Ku mengejar bus yang mulai berjalan")
                     sendMessage(msg.to,"Ku ingin ungkapkan kepada dirimu")
                     sendMessage(msg.to,"Kabut dalam hatiku telah menghilang")
